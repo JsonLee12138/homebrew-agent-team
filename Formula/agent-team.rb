@@ -5,20 +5,20 @@
 class AgentTeam < Formula
   desc "AI team role manager — git worktrees + terminal multiplexer"
   homepage "https://github.com/JsonLee12138/agent-team"
-  version "1.3.0"
+  version "1.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JsonLee12138/agent-team/releases/download/v1.3.0/agent-team_darwin_amd64.tar.gz"
-      sha256 "84768052a11589e3f509d593618f8cf308971c7417ca53981fa145a2838a0886"
+      url "https://github.com/JsonLee12138/agent-team/releases/download/v1.3.1/agent-team_darwin_amd64.tar.gz"
+      sha256 "7e5b8247fc3b74c18cd0098bf54afbfd713aa5634bf918715dee2d065de0c8c3"
 
       define_method(:install) do
         bin.install "agent-team"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JsonLee12138/agent-team/releases/download/v1.3.0/agent-team_darwin_arm64.tar.gz"
-      sha256 "56c443f8c7ceb9349d36a69085057d189a3b127dafe8111185f125accce71b3e"
+      url "https://github.com/JsonLee12138/agent-team/releases/download/v1.3.1/agent-team_darwin_arm64.tar.gz"
+      sha256 "98f245c9367c1a6ca1391e2c94f61c48fed17c21e3c37aa8e140dbd235dc3975"
 
       define_method(:install) do
         bin.install "agent-team"
@@ -28,15 +28,15 @@ class AgentTeam < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JsonLee12138/agent-team/releases/download/v1.3.0/agent-team_linux_amd64.tar.gz"
-      sha256 "b76b8968827a6f787c930aca6373e687dec691fe078f57109acb90fe462b210d"
+      url "https://github.com/JsonLee12138/agent-team/releases/download/v1.3.1/agent-team_linux_amd64.tar.gz"
+      sha256 "0d58a972e9500c487e682548771c2cf209edcd4e8f28256eba9a6a9c3636313f"
       define_method(:install) do
         bin.install "agent-team"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JsonLee12138/agent-team/releases/download/v1.3.0/agent-team_linux_arm64.tar.gz"
-      sha256 "38bd1043e2a3787076f2e7c4160eda3d7f96d7f51f24d140989f866b20e4d712"
+      url "https://github.com/JsonLee12138/agent-team/releases/download/v1.3.1/agent-team_linux_arm64.tar.gz"
+      sha256 "56a9ac0ce00a8ced59a6fa363572504bd053c195d22c633a64824302e0d3f675"
       define_method(:install) do
         bin.install "agent-team"
       end
